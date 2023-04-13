@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.hero {
+  width: 100%;
+  height: 110vh;
+  background-image: linear-gradient(rgb(19, 18, 19), rgb(8, 8, 8));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background-color: #0000009a;
+}
+
+nav.logo {
+  width: 10;
+  height: 10;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  z-index: 1000;
+}
+
+
+
+.navigation-bar li a {
+  text-decoration: solid;
+  color: #ffffff;
+  padding: 5px 0;
+  font-size: 20px;
+  position: relative;
+  margin: 10px;
+  z-index: 1000;
+}
+
+.navigation-bar li a::after {
+  content: "";
+  background-color: aqua;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+  z-index: 1000;
+}
+
+.navigation-bar li a:hover::after {
+  width: 100%;
+  z-index: 1000;
+}
+
+.content {
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+h1 span {
+  position: relative;
+  text-transform: uppercase;
+  display: block;
+}
+
+.content a {
+  text-decoration: wavy;
+  display: inline-block;
+  color: white;
+  font: 30px;
+  font-size: 25px;
+  border: 2px solid white;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 60px;
+  background-image: linear-gradient(rgb(61, 16, 61), rgb(240, 198, 240));
+}
+
+.content a:hover {
+  background-image: linear-gradient(rgb(2, 2, 2), rgb(133, 91, 133));
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.backvid {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .backvid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .backvid {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.backvid_2 {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .backvid_2 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .backvid_2 {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.planet_description {
+  background-color: #000000d3;
+  color: #ffffff;
+}
+
+.help_tab {
+  background-color: #000000d3;
+  color: #ffffff;
+}
+
+.gotobottom {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: black;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+
+.slider {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.slider .owl-item.active.center.slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+
+  background: linear-gradient(red, blue);
+}
+
+.img_gameplay{
+  width: 100%;
+  height: 75vh;
+}
+
+.col-sm-4 {
+  border: 1px solid #ddd;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s; /* Safari */
+  -moz-transition: transform 0.5s; /* Firefox */
+  -ms-transition: transform 0.5s; /* IE */
+  -o-transition: transform 0.5s; /* Opera */
+}
+
+.col-sm-4:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05); /* Safari */
+  -moz-transform: scale(1.05); /* Firefox */
+  -ms-transform: scale(1.05); /* IE */
+  -o-transform: scale(1.05); /* Opera */
+}

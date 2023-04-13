@@ -1,0 +1,23 @@
+.zoom-in-zoom-out {
+  font-size: 160px;
+  color: transparent;
+  font-weight: 600;
+  background: url(../Assests/Images/text_background.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: white;
+  letter-spacing: 30opx;
+  animation: zoom-in-zoom-out 10s ease-in-out infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+}
